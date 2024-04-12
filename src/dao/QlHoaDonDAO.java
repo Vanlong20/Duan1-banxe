@@ -24,10 +24,10 @@ public class QlHoaDonDAO {
     String SELECT_BY_ID_SQL = "SELECT * FROM HoaDon WHERE MaSP=?"; 
 
     public void insert(QLHoaDon model) throws SQLException{
-        jdbchelper.update(INSERT_SQL, model.getMaHD(),model.getNgayMua(),model.getGhiChu(),model.getMaNV(),model.getMaKH(),model.getSanPham(),model.getTongTien());
+        jdbchelper.update(INSERT_SQL, model.getMaHD(),model.getNgayMua(),model.getGhiChu(),model.getMaNV(),model.getMaKH(),model.getSanPham(),model.getSoTien());
     }
    public void update(QLHoaDon model) throws SQLException{
-      jdbchelper.update(UPDATE_SQL,model.getNgayMua(),model.getGhiChu(),model.getMaNV(),model.getMaKH(),model.getSanPham(),model.getTongTien());
+      jdbchelper.update(UPDATE_SQL,model.getNgayMua(),model.getGhiChu(),model.getMaNV(),model.getMaKH(),model.getSanPham(),model.getSoTien());
   
    }
    public void delete(String id) throws SQLException{
@@ -59,7 +59,7 @@ public class QlHoaDonDAO {
            QLTK.setMaNV(rs.getString("MaNV"));
            QLTK.setMaKH(rs.getString("MaKH"));
            QLTK.setSanPham(rs.getString("SanPham"));
-           QLTK.setTongTien(rs.getString("SoTien"));
+           QLTK.setSoTien(rs.getString("SoTien"));
            
             listHD.add(QLTK);
           }

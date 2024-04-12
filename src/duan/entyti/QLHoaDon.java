@@ -19,19 +19,19 @@ public class QLHoaDon {
     String MaKH;
     String SanPham;
 //    List<QLChitiethoadon> listSP;
-    String TongTien;
+   String SoTien;
 
     public QLHoaDon() {
     }
 
-    public QLHoaDon(String MaHD, String NgayMua, String GhiChu, String MaNV, String MaKH, String SanPham, String TongTien) {
+    public QLHoaDon(String MaHD, String NgayMua, String GhiChu, String MaNV, String MaKH, String SanPham, String SoTien) {
         this.MaHD = MaHD;
         this.NgayMua = NgayMua;
         this.GhiChu = GhiChu;
         this.MaNV = MaNV;
         this.MaKH = MaKH;
         this.SanPham = SanPham;
-        this.TongTien = TongTien;
+        this.SoTien = SoTien;
     }
 
     public String getMaHD() {
@@ -82,13 +82,12 @@ public class QLHoaDon {
         this.SanPham = SanPham;
     }
 
-    public String getTongTien() {
-        return TongTien;
+    public String getSoTien() {
+        return SoTien;
     }
 
-    public void setTongTien(String TongTien) {
-        this.TongTien = TongTien;
+    public void setSoTien(String SoTien) {
+        this.SoTien = SoTien;
     }
-
    
 }
